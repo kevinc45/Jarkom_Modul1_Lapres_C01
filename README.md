@@ -18,7 +18,7 @@ Kemudian Analyze >> Follow >> TCP Stream
 
 **HASIL :**
 
-![](screenshot/no1.png)
+![](screenshot/no1.PNG)
 
 ### Soal No. 2
 Simpan gambar "Tim_Kunjungan_Kerja_BAKN_DPR_RI_ke_Sukabumi141436.jpg"!
@@ -29,9 +29,9 @@ http contains "Tim_Kunjungan_Kerja_BAKN_DPR_RI_ke_Sukabumi141436.jpg"
 
 **HASIL :**
 
-![](screenshot/no2.1.png)
+![](screenshot/no2.1.PNG)
 
-![](screenshot/no2.2.png)
+![](screenshot/no2.2.jpg)
 
 ### Soal No. 3
 Cari username dan password ketika login di "ppid.dpr.go.id"!
@@ -42,7 +42,7 @@ http.host contains "ppid.dpr.go.id" && http.request.method == POST
 
 **HASIL :**
 
-![](screenshot/no3.png)
+![](screenshot/no3.PNG)
 
 ### Soal No. 4
 Temukan paket dari **web-web** yang menggunakan **basic authentication** method!
@@ -53,7 +53,7 @@ http.authorization
 
 **HASIL :**
 
-![](screenshot/no4.png)
+![](screenshot/no4.PNG)
 
 ### Soal No. 5
 Ikuti perintah di aku.pengen.pw! Username dan password bisa didapatkan dari file .pcapng!
@@ -64,9 +64,9 @@ http.authbasic && http contains “aku.pengen.pw”
 
 **HASIL :**
 
-![](screenshot/no5.1.png)
+![](screenshot/no5.1.PNG)
 
-![](screenshot/no5.2.png)
+![](screenshot/no5.2.PNG)
 
 ### Soal No. 6
 Seseorang menyimpan file zip melalui FTP dengan nama "Answer.zip". Simpan dan Buka file "Open This.pdf" di Answer.zip. Untuk mendapatkan password zipnya, temukan dalam file zipkey.txt (passwordnya adalah isi dari file txt tersebut).
@@ -78,9 +78,9 @@ Seseorang menyimpan file zip melalui FTP dengan nama "Answer.zip". Simpan dan Bu
 
 **HASIL :**
 
-![](screenshot/no6.1.png)
+![](screenshot/no6.1.PNG)
 
-![](screenshot/no6.2.png)
+![](screenshot/no6.2.PNG)
 
 ![](screenshot/no6.3.png)
 
@@ -95,11 +95,11 @@ Kemudian Analyze >> Follow >> TCP Stream >> Show and save data as "Raw" >> Save 
 
 **HASIL :**
 
-![](screenshot/no7.1.png)
+![](screenshot/no7.1.PNG)
 
-![](screenshot/no7.2.png)
+![](screenshot/no7.2.PNG)
 
-![](screenshot/no7.3.png)
+![](screenshot/no7.3.PNG)
 
 ### Soal No. 8
 Cari objek apa saja yang didownload (RETR) dari koneksi FTP dengan Microsoft FTP Service!
@@ -110,7 +110,7 @@ ftp.request.command == "RETR"
 
 **HASIL :**
 
-![](screenshot/no8.png)
+![](screenshot/no8.PNG)
 
 
 ### Soal No. 9
@@ -122,7 +122,7 @@ ftp.request.command contains "USER" || ftp.request.command contains "PASS"
 
 **HASIL :**
 
-![](screenshot/no9.png)
+![](screenshot/no9.PNG)
 
 
 ### Soal No. 10
@@ -136,7 +136,7 @@ frame contains 25:50:44:46
 
 **HASIL :**
 
-![](screenshot/no10.1.png)
+![](screenshot/no10.1.PNG)
 
 ![](screenshot/no10.2.jpg)
 
@@ -151,7 +151,7 @@ port 21
 
 **HASIL :**
 
-![](screenshot/no11.png)
+![](screenshot/no11.PNG)
 
 
 ### Soal No. 12
@@ -163,7 +163,7 @@ src port 80
 
 **HASIL :**
 
-![](screenshot/no12.png)
+![](screenshot/no12.PNG)
 
 ### Soal No. 13
 Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!
@@ -174,7 +174,7 @@ dst port 443
 
 **HASIL :**
 
-![](screenshot/no13.png)
+![](screenshot/no13.PNG)
 
 ### Soal No. 14
 Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
@@ -196,4 +196,4 @@ dst host monta.if.its.ac.id
 
 **HASIL :**
 
-![](screenshot/no15.png)
+![](screenshot/no15.PNG)
