@@ -200,7 +200,7 @@ src host <ip kita>
 ```
 
 **KETERANGAN  :**
-Menggunakan *Command Prompt* lalu ipconfig untuk mendapatkan <IP kita>. 
+Menggunakan *Command Prompt* lalu ipconfig untuk mendapatkan IP kita. 
 
 **HASIL :**
 
