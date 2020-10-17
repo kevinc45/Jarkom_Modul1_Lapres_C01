@@ -117,7 +117,7 @@ Cari objek apa saja yang didownload (RETR) dari koneksi FTP dengan Microsoft FTP
 - ftp.request.command == "RETR" && ip.dst_host 198.246.117.106
 ```
 
-**KETERANGAN: **
+**KETERANGAN  :**
 *Display filter* yang pertama digunakan untuk mencari IP dari koneksi Microsoft FTP Service yang kemudian dipakai di *display filter* yang kedua.
 
 **HASIL :**
