@@ -2,7 +2,9 @@
 Praktikum Modul 1 Jaringan Komputer 2020
 
 ## Nama Anggota Kelompok :
+
 **1. Devi Hainun Pasya (05111840000014)**
+
 **2. Kevin Christian Hadinata (05111840000066)**
 
 
