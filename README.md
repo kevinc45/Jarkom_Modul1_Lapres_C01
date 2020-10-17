@@ -1,9 +1,9 @@
 # Jarkom_Modul1_Lapres_C01
 Praktikum Modul 1 Jaringan Komputer 2020
 
-### Nama Anggota Kelompok :
-### 1. Devi Hainun Pasya (05111840000014)
-### 2. Kevin Christian Hadinata (05111840000066)
+## Nama Anggota Kelompok :
+**1. Devi Hainun Pasya (05111840000014)**
+**2. Kevin Christian Hadinata (05111840000066)**
 
 
 ## A. Display Filter
@@ -26,6 +26,8 @@ Simpan gambar "Tim_Kunjungan_Kerja_BAKN_DPR_RI_ke_Sukabumi141436.jpg"!
 ```
 http contains "Tim_Kunjungan_Kerja_BAKN_DPR_RI_ke_Sukabumi141436.jpg"
 ```
+**KETERANGAN  :**
+Setelah menemukan *packet* yang berisi file jpg yang dicari, maka kita dapat men-download file tersebut melalui File > Export Objects > HTML dan mencari nama *file*-nya untuk kemudian dapat di-*save* dalam bentuk jpg.
 
 **HASIL :**
 
@@ -48,8 +50,10 @@ http.host contains "ppid.dpr.go.id" && http.request.method == POST
 Temukan paket dari **web-web** yang menggunakan **basic authentication** method!
 
 ```
-http.authorization
+http.authbasic
 ```
+**KETERANGAN  :**
+Di keterangan *Hypertext Transfer Protocol* bagian *Authorization* akan tertera tulisan *"Basic"*.
 
 **HASIL :**
 
@@ -75,6 +79,8 @@ Seseorang menyimpan file zip melalui FTP dengan nama "Answer.zip". Simpan dan Bu
 - ftp-data.command contains "STOR Answer.zip"
 - ftp-data.command contains "STOR zipkey.txt"
 ```
+**KETERANGAN  :**
+Ada kata kunci 'menyimpan' pada soal menandakan bahwa *file* yang dicari dapat di-*filter* menggunakan perintah STOR. Setelah menemukan *packet* yang dibutuhkan, kita dapat melakukan Follow > TCP Stream > Show and save data as RAW > Save as. Sementara itu, untuk zipkey.txt, *password* yang dicari akan terlihat saat membuka TCP Stream dari *packet* tersebut.
 
 **HASIL :**
 
@@ -105,13 +111,18 @@ Kemudian Analyze >> Follow >> TCP Stream >> Show and save data as "Raw" >> Save 
 Cari objek apa saja yang didownload (RETR) dari koneksi FTP dengan Microsoft FTP Service!
 
 ```
-ftp.request.command == "RETR"
+- ftp contains Microsoft
+- ftp.request.command == "RETR" && ip.dst_host 198.246.117.106
 ```
+
+**KETERANGAN: **
+*Display filter* yang pertama digunakan untuk mencari IP dari koneksi Microsoft FTP Service yang kemudian dipakai di *display filter* yang kedua.
 
 **HASIL :**
 
-![](screenshot/no8.PNG)
+![](screenshot/no8.1.PNG)
 
+![](screenshot/no8.2.PNG)
 
 ### Soal No. 9
 Cari username dan password ketika login FTP pada localhost!
@@ -133,6 +144,9 @@ clue: "25 50 44 46"
 ```
 frame contains 25:50:44:46
 ```
+
+**KETERANGAN  :**
+Setelah menemukan *hex code* yang dicari, dapat di-*save* dengan cara Follow > TCP Stream > Show and save data as RAW > Save as.
 
 **HASIL :**
 
@@ -183,9 +197,12 @@ Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
 src host <ip kita>
 ```
 
+**KETERANGAN  :**
+Menggunakan *Command Prompt* lalu ipconfig untuk mendapatkan <IP kita>. 
+
 **HASIL :**
 
-![]()
+![](screenshot/no14.PNG)
 
 ### Soal No. 15
 Filter sehingga wireshark hanya mengambil paket yang tujuannya ke monta.if.its.ac.id!
