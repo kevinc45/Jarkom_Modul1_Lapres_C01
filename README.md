@@ -45,7 +45,7 @@ Cari username dan password ketika login di "ppid.dpr.go.id"!
 http.host contains "ppid.dpr.go.id" && http.request.method == POST
 ```
 **KETERANGAN  :**
-Username dan password dapat dicari dengan memfilter paket dari website "ppid.dpr.go.id" dan request method "POST". Lalu pada keterangan *HTML from URL encoded& terdapat *Form item* yang berisi username dan password.
+Username dan password dapat dicari dengan memfilter paket dari website "ppid.dpr.go.id" dan request method "POST". Lalu pada keterangan *HTML from URL encoded* terdapat *Form item* yang berisi username dan password.
 
 **HASIL :**
 
