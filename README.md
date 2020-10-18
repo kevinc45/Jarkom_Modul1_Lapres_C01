@@ -113,7 +113,7 @@ Karena nama file sudah tertera, langsung bisa dicari dengan filter frame. Kemudi
 
 ![](screenshot/no7.3.PNG)
 
-![]()
+![](screenshot/no7.4.PNG)
 
 ### Soal No. 8
 Cari objek apa saja yang didownload (RETR) dari koneksi FTP dengan Microsoft FTP Service!
@@ -144,6 +144,9 @@ Karena username dan password tertera pada command, maka dapat langsung dicari de
 **HASIL :**
 
 ![](screenshot/no9.PNG)
+
+**KESALAHAN PENGERJAAN SAAT PRAKTIKUM  :**
+Langsung menggunakan filter `ftp` yang tidak spesifik kemudian username dan password dicari dengan memilih menu Analyze >> Follow >> TCP Stream.
 
 
 ### Soal No. 10
@@ -224,3 +227,6 @@ dst host monta.if.its.ac.id
 **HASIL :**
 
 ![](screenshot/no15.PNG)
+
+**KESALAHAN PENGERJAAN SAAT PRAKTIKUM  :**
+Tidak teliti membaca soal dan malah menggunakan display filter `http.host contains "monta.if.its.ac.id"`.
