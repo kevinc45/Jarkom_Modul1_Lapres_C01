@@ -16,7 +16,8 @@ Sebutkan webserver yang digunakan pada "testing.mekanis.me"!
 ```
 http.host contains "testing.mekanis.me"
 ```
-Kemudian Analyze >> Follow >> TCP Stream
+**KETERANGAN  :**
+Setelah menemukan *packets* yang dicari, server darpat dicari dengan memilih menu Analyze >> Follow >> TCP Stream.
 
 **HASIL :**
 
@@ -43,6 +44,8 @@ Cari username dan password ketika login di "ppid.dpr.go.id"!
 ```
 http.host contains "ppid.dpr.go.id" && http.request.method == POST
 ```
+**KETERANGAN  :**
+Username dan password dapat dicari dengan memfilter paket dari website "ppid.dpr.go.id" dan request method "POST". Lalu pada keterangan *HTML from URL encoded& terdapat *Form item* yang berisi username dan password.
 
 **HASIL :**
 
@@ -67,6 +70,8 @@ Ikuti perintah di aku.pengen.pw! Username dan password bisa didapatkan dari file
 ```
 http.authbasic && http contains “aku.pengen.pw”
 ```
+**KETERANGAN  :**
+*Packets* di filter berdasarkan website dan *authorization*-nya. Setelah didapatkan, Di keterangan *Hypertext Transfer Protocol* bagian *Authorization* akan tertera tulisan *"Credentials"* yang berisi username dan password untuk login ke Website. Setelah memasukkan username dan password yang didapat, konfigurasi kabel dapat langsung di input.
 
 **HASIL :**
 
@@ -99,15 +104,16 @@ Your Super Mega Ultra Rare Hint = nama pdf-nya "Yes.pdf"
 ```
 frame contains “Yes.pdf”
 ```
-Kemudian Analyze >> Follow >> TCP Stream >> Show and save data as "Raw" >> Save As..
+**KETERANGAN  :**
+Karena nama file sudah tertera, langsung bisa dicari dengan filter frame. Kemudian file dapat di-*save* dengan Analyze >> Follow >> TCP Stream >> Show and save data as "Raw" >> Save As.. "Yes.zip".
 
 **HASIL :**
 
 ![](screenshot/no7.1.PNG)
 
-![](screenshot/no7.2.PNG)
-
 ![](screenshot/no7.3.PNG)
+
+![]()
 
 ### Soal No. 8
 Cari objek apa saja yang didownload (RETR) dari koneksi FTP dengan Microsoft FTP Service!
@@ -132,6 +138,8 @@ Cari username dan password ketika login FTP pada localhost!
 ```
 ftp.request.command contains "USER" || ftp.request.command contains "PASS"
 ```
+**KETERANGAN  :**
+Karena username dan password tertera pada command, maka dapat langsung dicari dengan mem-filter request command FTP yang mengandung string "USER" dan "PASS".
 
 **HASIL :**
 
